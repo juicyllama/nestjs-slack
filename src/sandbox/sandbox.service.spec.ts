@@ -2,10 +2,6 @@ import type { SlackService } from '../slack/slack.service'
 import { SandboxService } from './sandbox.service'
 import { ConfigService } from '@nestjs/config'
 
-jest.mock('uuid', () => ({
-	v4: jest.fn(() => 'uuid'),
-}))
-
 describe('SandboxService', () => {
 	let configGetMock: jest.Mock
 	let configService: ConfigService
