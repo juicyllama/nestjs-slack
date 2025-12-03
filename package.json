@@ -1,6 +1,6 @@
 {
     "name": "@juicyllama/nestjs-slack",
-    "version": "11.0.1",
+    "version": "11.0.2",
     "description": "A NestJS app for integrating with Slack",
     "publishConfig": {
         "access": "public",
