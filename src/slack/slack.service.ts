@@ -2,7 +2,7 @@ import { Logger } from '@juicyllama/utils'
 import { Injectable } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { type ChatPostMessageArguments, WebClient } from '@slack/web-api'
-import { v4 as uuidv4 } from 'uuid'
+import { default as uuid } from 'uuid'
 
 @Injectable()
 export class SlackService {
@@ -38,10 +38,7 @@ export class SlackService {
 		}
 
 		const web = new WebClient(token)
-
-		const uuid4 = uuidv4()
-
-		console.log(uuid4)
+		const uuid4 = uuid.v4()
 
 		this.logger.debug('Request to Slack', {
 			context: ['SlackService', 'postMessage', uuid4],
