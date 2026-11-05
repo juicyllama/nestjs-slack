@@ -1,3 +1,4 @@
+/// <reference types="jest" />
 import type { SlackService } from '../slack/slack.service'
 import { SandboxService } from './sandbox.service'
 import { ConfigService } from '@nestjs/config'
